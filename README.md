@@ -1,0 +1,7 @@
+# Illusion sketches
+
+An interactive web-based app, demonstrating various optical illusions and providing informational content about them. Made in my second year university module _Perception and Multimedia Computing._ Uses the p5.js library as well as additional libraries _p5.js Scene Manager, p5 GUI_ and _Quick Settings_.
+
+Contrived from multiple scenes, it allows the user to seamlessly switch between the four different illusions with the press of a button. All of the illusions take in some sort of user input to be manipulated – usually by the use of a graphical user interface – or in the case of the last illusion, with the movement of the mouse. Below each canvas there is an informative section, consisting of the description of the current illusion, its explanation and a brief instruction on how to explore it by manipulating different parameters.
+
+The first illusion is the **stepping feet illusion** in which two rectangles are moving simultaneously on a black and white grid, and due to high/low contrast appearing as one ‘foot’ moving faster than the other. The second is the **flash lag illusion**, where a flash of light happens in an instance that a moving object moves past it, however, it appears to happen a bit behind the object as opposed to perfectly aligned. In the third, the **coffee bean illusion**, motion arises from stationary objects due to perception of contrast, and in the last – the **Bezold effect**, the perception of a color is influenced by the surrounding colors.
