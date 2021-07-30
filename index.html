@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project - Illusions</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lib/p5.js"></script>
+  <script src="lib/scenemanager.js"></script>
+  <script src="lib/p5.gui.js"></script>
+  <script src="lib/quicksettings.js"></script>
+  <!-- Load the scenes -->
+  <script src="steppingfeet.js"></script>
+  <script src="flashlag.js"></script>
+  <script src="coffeebean.js"></script>
+  <script src="bezold.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+  </main>
+  <div class="infoCont" id="infoCont1">
+    <h3 class="illusionTitle"><i>Stepping Feet Illusion</i></h3>
+    <p class="illusionSub">The moving 'feet' seem to move out of phase with each other. In fact, their movement is silmuntaneous - the feet are aligned and moving with the same constant speed. 
+      Your perception of motion is just affected by the contrast between each foot and the background.</p>
+    <h3 class="illusionTitle">What to do?</h3>
+    <p class="illusionInstruction">Use the GUI on the left to control various parameters and see how they affect your perception of the illusion.
+      For a more pronounced effect, do not look directly at the moving rectangles, but rather at a location halfway between them. Decreasing the alpha of the background decreases contrast, enabling you to see
+      that the feet do indeed move silmuntaneously. Observe the 'worm' effect when the number of bins per foot is an odd number. Try the red-green and black-white feet color combinations, too!
+    </p>
+    <h3 class="illusionTitle">What's going on?</h3>
+    <p class="illusionInfo">
+      Due to black and white stripes, the contrast continously changes from low to high. The lighter foot has high contrast against the black stripes,
+      and low contrast against the white ones. Opposite is true for the darker foot. 
+      The reason contrast is important is that it affects how easy it is to see motion. Objects with low contrast quickly become indistinguishable
+      from their background and thus it's nearly impossible to determine what is moving or whether there even is movement. (Try observing the illusion with black and white feet!) So half of the time your brain does not get a motion cue, and perception goes into default, i.e. no motion.
+      As a result motion with constant speed may appear to speed up and slow down.
+    </p>
+  </div>
+
+  <div class="infoCont" id="infoCont2">
+    <h3 class="illusionTitle"><i>Flash Lag Illusion</i></h3>
+    <p class="illusionSub">Watch how the blue box moves across the ground. At an instance a pink box will flash - seemingly slightly behind the blue box.
+      However, at the moment when the pink box appears, the two are at equal positions along the x axis. </p>
+    <h3 class="illusionTitle">What to do?</h3>
+    <p class="illusionInstruction">Use your mouse to rotate the scene and view it from different angles. Then use the GUI on the left to stop or continue the movement of the blue box, allowing you investigate the illusion. Press the 'Side view' button to look at the scene from the side -  look at the proof of your brain being tricked.</p>
+    <h3 class="illusionTitle">What's going on?</h3>
+    <p class="illusionInfo">
+      The flash-lag effect refers to the phenomenon when a flash of a stationary light, appearing in alignment with a moving object, is perceived to lag behind it. The effect seems to involve low-level perceptual processes as well as high-level cognitive processes, yet an absolute explanation for it has yet to be developed. Several hypotheses have been presented, including those refering to mislocalizations of a moving target and the discrete perception hypothesis. The latter treats the effect as having basis in 'data compression' in the brain with our conscious perception being a reconstruction of the compressed input. One theory emphasises that moving objects are perceived a bit ahead of their assumed trajectory, the perception which is determined by accumulated experience (i.e. repeating movement), leading to positional disparity between briefly flashed stationary and moving objects.
+      All in all, the flash lag efffect still presents a challenge to understanding how the visual system generates perceptions of objects in motion. 
+    </p>
+  </div>
+
+  <div class="infoCont" id="infoCont3">
+    <h3 class="illusionTitle"><i>Coffee Bean Motion Illusion</i></h3>
+    <p class="illusionSub">The coffee bean illusion is a form of a peripheral drift illusion (motion illusion), where an image appears to be moving, when it is in fact stil.</p>
+    <h3 class="illusionTitle">What to do?</h3>
+    <p class="illusionInstruction">Play with the GUI on the left to change the rotation of the coffee beans and see how it affects your perception of the motion. What interesting motions can you make?</p>
+    <h3 class="illusionTitle">What's going on?</h3>
+    <p class="illusionInfo">Illusory motion comes about due to the cognitive effects of interacting color contrasts and shape position. It is based on the finding that the cerebral cortex predicts visual motion to adapt human behavior to surrounding objects moving in real time. However, the underlying mechanisms for such illusions are still unknown. It has been suggested that the perceived motion is caused by the difference in neural signals and in the processing latency of signals from different parts of an image. Supposedly, high-contrast areas are processed faster than low-contrast areas, where contrast is defined globally over the entire receptive field of an individual retinal neuron. The illusory motion is then explained as an example of the reverse phi phenomenon, where is the pattern is cycled, a sense of motion from the dark stimulus towards a light one will be created. Thus the different rotation and thus positioning of the dark and light stimulus in the image leads to perception of different motion.</p>
+  </div>
+
+  <div class="infoCont" id="infoCont4">
+    <h3 class="illusionTitle"><i>Bezold Effect</i></h3>
+    <h3 class="illusionTitle">What to do?</h3>
+    <p class="illusionSub">The Bezold effect stems from the color relativity principle, describing how our perception of a color is affected by its surrounding colors. Here, the identical horizontal bars of blue stripes differ in their perceived luminance because of the adjacent black and white stripes.</p>
+    <p class="illusionInstruction">Move your mouse up and down to move the stripes and inspect how your colour perception changes.</p>
+    <h3 class="illusionTitle">What's going on?</h3>
+    <p class="illusionInfo">The illusion is also refered to as the Munker's illusion, White's illusion or Munker–White's illusion. (They simply differ in the use of black-white vs. other colors.) Bezold discovered that under certain circumstances a colored region will take on the same color as its surroundings. In other words, the hue of a color is altered in appearance by the presence of surrounding colors. In the above sketch the blue streaks appear brighter when they lie in between the white ones, whereas when they lie between the black stripes, the opposite happens. 
+      The exact ocular mechanics behind these effects have yet to be explained. Some studies associate the phenomenon with our peripheral vision, whereas others hypothesize that spatial frequency plays a role as well as brightness assimilation. 
+    </p>
+  </div>
+
+</body>
+
+</html>
+
+
+<!-- ----------  References ------------ -->
+<!--
+ 
+Stepping Feet
+[1]M. Bach, "“Stepping feet” Motion Illusion", Michaelbach.de, 2020. [Online]. Available: https://michaelbach.de/ot/mot-feetLin/. [Accessed: 11- Dec- 2020] 
+[2]M. Bertamini, "Stepping Feet Illusion", Programming Visual Illusions for Everyone, pp. 145-152, 2017 [Online]. Available: https://link.springer.com/chapter/10.1007/978-3-319-64066-2_13. [Accessed: 11- Dec- 2020] 
+
+Flash lag
+[3]M. Bach, "Flash-Lag Effect", Michaelbach.de, 2019. [Online]. Available: https://michaelbach.de/ot/mot-flashLag/. [Accessed: 11- Dec- 2020] 
+[4]W. Wojtach, K. Sung, S. Truong and D. Purves, "An empirical explanation of the flash-lag effect", Proceedings of the National Academy of Sciences, vol. 105, no. 42, pp. 16338-16343, 2008 [Online]. Available: https://www.pnas.org/content/105/42/16338. [Accessed: 11- Dec- 2020] 
+[5]K. Schneider, "The Flash-Lag, Fröhlich and Related Motion Illusions Are Natural Consequences of Discrete Sampling in the Visual System", Frontiers in Psychology, vol. 9, 2018 [Online]. Available: https://www.frontiersin.org/articles/10.3389/fpsyg.2018.01227/full. [Accessed: 11- Dec- 2020] 
+
+Coffee bean
+[6]G.  Thomson,  F. Macpherson, "Rotating snakes illusion" in F. Macpherson (ed.), The Illusions Index, 2020 [Online]. Available: https://www.illusionsindex.org/i/rotating-snakes. [Accessed: 11- Dec- 2020] 
+[7]E. Watanabe, A. Kitaoka, K. Sakamoto, M. Yasugi and K. Tanaka, "Illusory Motion Reproduced by Deep Neural Networks Trained for Prediction", Frontiers in Psychology, vol. 9, 2018 [Online]. Available: https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00345/full. [Accessed: 11- Dec- 2020] 
+
+Bezold effect
+[8]New World Encyclopedia contributors, "Bezold Effect", New World Encyclopedia. New World Encyclopedia, 2019 [Online]. Available: https://www.newworldencyclopedia.org/p/index.php?title=Bezold_Effect&oldid=1027632. [Accessed: 11- Dec- 2020] 
+[9]"What is Bezold Effect? | Useful Bezold Effect", LASIK of Nevada. [Online]. Available: https://lasikofnv.com/test-your-vision-by-bezold-effect/. [Accessed: 11- Dec- 2020] 
+
+Button transition inspo
+https://codepen.io/kathykato/pen/KrBZro
+
+-->

@@ -1,0 +1,102 @@
+@font-face {
+    font-family: SpaceGroteskRegular;
+    src: url(fonts/SpaceGrotesk-Regular.ttf);
+}
+* {
+    font-family: SpaceGroteskRegular;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    font-family: SpaceGroteskRegular;
+}
+#titleCont {
+    width: 300px;
+    text-align: center;
+}
+#title {
+    padding: 10px 20px;
+    margin: 0;
+    font-weight: normal;
+    font-family: SpaceGroteskRegular;
+    color: white;
+}
+#buttonCont {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+}
+/* Button transition inspiration code - adapted from
+https://codepen.io/kathykato/pen/KrBZro */
+.button {
+    margin: 13px auto;
+    padding: 11px 7px;
+    display: block;
+    font-family: SpaceGroteskRegular;
+    line-height: 1.5rem;
+    width: 180px;
+    font-size: 14px;
+    background-color: rgb(224, 232, 235);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: letter-spacing 0.5s cubic-bezier(0.65,-0.25,0.25, 1.55);
+}
+.button:active, .button:focus {
+    border: none;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+.button:hover {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    letter-spacing: 0.165rem;
+    cursor: pointer;
+}
+.activeScene {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+.infoCont {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 235px;
+    top: 615px;
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(25, 27, 27);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    line-height: 1.75rem;
+}
+.infoCont:nth-of-type(4) {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 15px;
+    top: 615px;
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(25, 27, 27);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 850px;
+    line-height: 1.75rem;
+}
+.illusionTitle {
+    color: white;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.illusionSub {
+    color: rgba(170, 170, 170, 0.918);
+}
+.illusionInstruction {
+    color: rgba(170, 170, 170, 0.918);
+}
+.illusionInfo {
+    color: rgba(170, 170, 170, 0.918);
+}
